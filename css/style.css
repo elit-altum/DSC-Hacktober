@@ -1336,8 +1336,15 @@ h5,
   margin-bottom: 20px;
 }
 
+.footer-section .widget .links {
+  display: flex;
+  flex-direction: row;
+}
+
 .footer-section .widget .links li {
   margin-bottom: 10px;
+  margin-right: 10px;
+
 }
 
 .footer-section .widget .links li a {
