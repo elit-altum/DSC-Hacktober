@@ -1,9 +1,13 @@
+html {
+  scroll-behavior: smooth;
+} 
+
 /* Base */
 body {
   line-height: 1.7;
   color: gray;
   font-weight: 300;
-  background-color: #222831;
+  background-color: #072540;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -1329,7 +1333,7 @@ h5,
   padding: 70px 0;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
-  background: #1a1e25;
+  background: #010e28;
 }
 
 .footer-section .widget h3 {
