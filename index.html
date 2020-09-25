@@ -1,365 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>DSC-DTU - Hacktoberfest</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 
-<head>
-	<title>DSC-DTU - Hacktoberfest</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="fonts/icomoon/style.css" />
 
-	<link rel="stylesheet" href="fonts/icomoon/style.css" />
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
-	<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
-	<link rel="stylesheet" href="css/jquery-ui.css" />
-	<link rel="stylesheet" href="css/owl.carousel.min.css" />
-	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
-	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-datepicker.css" />
 
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+		<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+		<link rel="stylesheet" href="css/aos.css" />
 
-	<link rel="stylesheet" href="css/aos.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-	<link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-	<div class="site-wrap">
-		<div class="site-mobile-menu site-navbar-target">
-			<div class="site-mobile-menu-header">
-				<div class="site-mobile-menu-close">
-					<span class="icon-close2 js-menu-toggle"></span>
-				</div>
-			</div>
-			<div class="site-mobile-menu-body"></div>
-		</div>
-
-		<header class="site-navbar py-4" role="banner">
-			<div class="container">
-				<div class="d-flex align-items-center">
-					<div class="site-logo">
-						<a href="index.html">
-							<img src="images/dsc-logo.png" alt="Logo" width="50px" />
-							<span>DSC DTU</span>
-						</a>
-					</div>
-					<div class="ml-auto">
-						<nav class="site-navigation position-relative text-right" role="navigation">
-							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li class="active">
-									<a href="index.html" class="nav-link">Home</a>
-								</li>
-								<li>
-									<a href="https://dsc-dtu.github.io/" target="_blank" class="nav-link">About Us</a>
-								</li>
-								<li><a href="#projects" class="nav-link">Projects</a></li>
-								<li><a href="#contact" class="nav-link">Contact</a></li>
-							</ul>
-						</nav>
-
-						<a href="#"
-							class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-white"><span
-								class="icon-menu h3 text-white"></span></a>
+	<body>
+		<div class="site-wrap">
+			<div class="site-mobile-menu site-navbar-target">
+				<div class="site-mobile-menu-header">
+					<div class="site-mobile-menu-close">
+						<span class="icon-close2 js-menu-toggle"></span>
 					</div>
 				</div>
+				<div class="site-mobile-menu-body"></div>
 			</div>
-		</header>
 
-		<div class="hero overlay" style="
+			<header class="site-navbar py-4" role="banner">
+				<div class="container">
+					<div class="d-flex align-items-center">
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="images/dsc-logo.png" alt="Logo" width="50px" />
+								<span>DSC DTU</span>
+							</a>
+						</div>
+						<div class="ml-auto">
+							<nav
+								class="site-navigation position-relative text-right"
+								role="navigation"
+							>
+								<ul
+									class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"
+								>
+									<li class="active">
+										<a href="index.html" class="nav-link">Home</a>
+									</li>
+									<li>
+										<a
+											href="https://dsc-dtu.github.io/"
+											target="_blank"
+											class="nav-link"
+											>About Us</a
+										>
+									</li>
+									<li><a href="#projects" class="nav-link">Projects</a></li>
+									<li><a href="#contact" class="nav-link">Contact</a></li>
+								</ul>
+							</nav>
+
+							<a
+								href="#"
+								class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-white"
+								><span class="icon-menu h3 text-white"></span
+							></a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div
+				class="hero overlay"
+				style="
 					background-image: url('images/bg_3.png');
 					background-position: center;
 					background-size: cover;
-				">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-5 ml-auto">
-						<h1 class="text-white">Hacktoberfest</h1>
-						<p>
-							The month long celebration of open source. <br />
-							Made easier for you by DTU-DSC.
-						</p>
-						<div id="date-countdown"></div>
-						<p>
-							<a href="#projects" class="btn btn-primary py-3 px-4 mr-3">View Projects</a>
-							<a href="https://hacktoberfest.digitalocean.com/" class="more light" target="_blank">Learn More</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="d-flex team-vs">
-						<span class="score"></span>
-						<div class="team-1 w-50">
-							<div class="team-details w-100 text-center">
-								<h3>TASK</h3>
-								<p>
-									Create and merge at least 4 pull requests across various
-									repositories in the month of October.
-								</p>
-							</div>
-						</div>
-						<div class="team-2 w-50">
-							<div class="team-details w-100 text-center">
-								<h3>PRIZES</h3>
-								<p style="color: #eee">
-									Get a limited edition Hacktoberfest T-shirt along with lots
-									of swag like laptop stickers, e-books etc.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Internal linking for projects -->
-		<a id="projects"></a>
-
-		<!-- Web Projects Section -->
-		<div class="container site-section" style="margin-top: 50px">
-			<div class="row">
-				<div class="col-6 title-section">
-					<h2 class="heading">Projects - Web</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="custom-media d-flex">
-						<div class="img mr-4">
-							<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-						</div>
-						<div class="text">
-							<span class="meta">NodeJS | Express | MongoDB</span>
-							<h3 class="mb-4">
-								<a href="https://github.com/elit-altum/AuthExp-Express-Starter">AuthEXP - Web
-									Authentication</a>
-							</h3>
+				"
+			>
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-5 ml-auto">
+							<h1 class="text-white">Hacktoberfest</h1>
 							<p>
-								A simple, intuitive and ready to use MVC express starter with
-								built-in user authentication. Highly customizable for scaling.
+								The month long celebration of open source. <br />
+								Made easier for you by DTU-DSC.
 							</p>
+							<div id="date-countdown"></div>
 							<p>
+								<a href="#projects" class="btn btn-primary py-3 px-4 mr-3"
+									>View Projects</a
+								>
 								<a
-									href="https://github.com/elit-altum/AuthExp-Express-Starter/issues?q=label%3Ahacktoberfest">Contribute</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<div class="custom-media d-flex">
-						<div class="img mr-4">
-							<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-						</div>
-						<div class="text">
-							<span class="meta">ReactJS | Firebase</span>
-							<h3 class="mb-4">
-								<a href="https://github.com/elit-altum/React-Shoppping-Cart">Shopper - Checkout
-									System</a>
-							</h3>
-							<p>
-								A simple shopping cart trader system built using React Hooks
-								and Firebase.
-							</p>
-							<p>
-								<a
-									href="https://github.com/elit-altum/React-Shoppping-Cart/issues?q=is%3Aissue+label%3Ahacktoberfest">Contribute</a>
+									href="https://hacktoberfest.digitalocean.com/"
+									class="more light"
+									target="_blank"
+									>Learn More</a
+								>
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- Android Projects Section -->
-		<div class="container site-section">
-			<div class="row">
-				<div class="col-6 title-section">
-					<h2 class="heading">Projects - Android</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="custom-media d-flex">
-						<div class="img mr-4">
-							<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-						</div>
-						<div class="text">
-							<span class="meta">NodeJS | Express | MongoDB</span>
-							<h3 class="mb-4">
-								<a href="https://github.com/elit-altum/AuthExp-Express-Starter">AuthEXP - Web
-									Authentication</a>
-							</h3>
-							<p>
-								A simple, intuitive and ready to use MVC express starter with
-								built-in user authentication. Highly customizable for scaling.
-							</p>
-							<p>
-								<a
-									href="https://github.com/elit-altum/AuthExp-Express-Starter/issues?q=label%3Ahacktoberfest">Contribute</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<div class="custom-media d-flex">
-						<div class="img mr-4">
-							<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-						</div>
-						<div class="text">
-							<span class="meta">ReactJS | Firebase</span>
-							<h3 class="mb-4">
-								<a href="https://github.com/elit-altum/React-Shoppping-Cart">Shopper - Checkout
-									System</a>
-							</h3>
-							<p>
-								A simple shopping cart trader system built using React Hooks
-								and Firebase.
-							</p>
-							<p>
-								<a
-									href="https://github.com/elit-altum/React-Shoppping-Cart/issues?q=is%3Aissue+label%3Ahacktoberfest">Contribute</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Machine Learning Projects Section -->
-		<div class="container site-section">
-			<div class="row">
-				<div class="col-6 title-section">
-					<h2 class="heading">Projects - ML</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="custom-media d-flex">
-						<div class="img mr-4">
-							<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-						</div>
-						<div class="text">
-							<span class="meta">NodeJS | Express | MongoDB</span>
-							<h3 class="mb-4">
-								<a href="https://github.com/elit-altum/AuthExp-Express-Starter">AuthEXP - Web
-									Authentication</a>
-							</h3>
-							<p>
-								A simple, intuitive and ready to use MVC express starter with
-								built-in user authentication. Highly customizable for scaling.
-							</p>
-							<p>
-								<a
-									href="https://github.com/elit-altum/AuthExp-Express-Starter/issues?q=label%3Ahacktoberfest">Contribute</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<div class="custom-media d-flex">
-						<div class="img mr-4">
-							<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-						</div>
-						<div class="text">
-							<span class="meta">ReactJS | Firebase</span>
-							<h3 class="mb-4">
-								<a href="https://github.com/elit-altum/React-Shoppping-Cart">Shopper - Checkout
-									System</a>
-							</h3>
-							<p>
-								A simple shopping cart trader system built using React Hooks
-								and Firebase.
-							</p>
-							<p>
-								<a
-									href="https://github.com/elit-altum/React-Shoppping-Cart/issues?q=is%3Aissue+label%3Ahacktoberfest">Contribute</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Internal linking for contact -->
-		<a id="contact"></a>
-
-		<footer class="footer-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
-						<div class="widget mb-6">
-							<h3>Contact Us</h3>
-							<p>
-								Delhi Technological University Bawana Road, Daulatpur Village,
-								Rohini, Delhi, 110042<br />
-							</p>
-
-							<ul class="list-unstyled links">
-								<li><a href="mailto:dsc.dtu@gmail.com">Mail</a></li>
-								<li><a href="https://github.com/dsc-dtu">Github</a></li>
-								<li>
-									<a href="https://www.linkedin.com/company/dsc-dtu">LinkedIn</a>
-								</li>
-								<li>
-									<a href="https://www.instagram.com/dsc_dtu/">Instagram</a>
-								</li>
-								<li>
-									<a href="https://www.facebook.com/googledscdtu/">Facebook</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="row text-center">
-					<div class="col-md-12">
-						<div class="pt-5">
-							<p>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;
-								<script>
-									document.write(new Date().getFullYear());
-								</script>
-								All rights reserved | This template is made with
-								<i class="icon-heart" aria-hidden="true"></i> by
-								<a href="https://colorlib.com" target="_blank">Colorlib</a>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</p>
+					<div class="col-lg-12">
+						<div class="d-flex team-vs">
+							<span class="score"></span>
+							<div class="team-1 w-50">
+								<div class="team-details w-100 text-center">
+									<h3>TASK</h3>
+									<p>
+										Create and merge at least 4 pull requests across various
+										repositories in the month of October.
+									</p>
+								</div>
+							</div>
+							<div class="team-2 w-50">
+								<div class="team-details w-100 text-center">
+									<h3>PRIZES</h3>
+									<p style="color: #eee">
+										Get a limited edition Hacktoberfest T-shirt along with lots
+										of swag like laptop stickers, e-books etc.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-	</div>
-	<!-- .site-wrap -->
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/jquery.countdown.min.js"></script>
-	<script src="js/bootstrap-datepicker.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/jquery.mb.YTPlayer.min.js"></script>
+			<!-- Internal linking for projects -->
+			<a id="projects"></a>
 
-	<script src="js/main.js"></script>
-</body>
+			<!-- Web Projects Section -->
+			<div class="container site-section" style="margin-top: 50px">
+				<div class="row">
+					<div class="col-6 title-section">
+						<h2 class="heading">Web</h2>
+					</div>
+				</div>
+				<div class="row project-items">
+					<div class="col-lg-6">
+						<div class="custom-media d-flex">
+							<div class="img mr-4">
+								<img
+									src="images/authexp-icon.png"
+									alt="Image"
+									class="img-fluid"
+								/>
+							</div>
+							<div class="text">
+								<span class="meta">NodeJS | Express | MongoDB</span>
+								<h3 class="mb-4">
+									<a
+										href="https://github.com/elit-altum/AuthExp-Express-Starter"
+										target="_blank"
+										>AuthEXP - Web Authentication</a
+									>
+								</h3>
+								<p>
+									A simple, intuitive and ready to use express starter,
+									following the MVC architecture, with built-in user
+									authentication.
+								</p>
+								<p>
+									<a
+										target="_blank"
+										href="https://github.com/elit-altum/AuthExp-Express-Starter/issues?q=label%3Ahacktoberfest"
+										>Contribute</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
 
+					<div class="col-lg-6">
+						<div class="custom-media d-flex">
+							<div class="img mr-4">
+								<img
+									src="images/shecure-icon.png"
+									alt="Image"
+									class="img-fluid"
+								/>
+							</div>
+							<div class="text">
+								<span class="meta">MongoDB | NodeJS | React | Sentiment</span>
+								<h3 class="mb-4">
+									<a
+										href="https://www.github.com/iamdeepti/shecure"
+										target="_blank"
+										>ShECURE</a
+									>
+								</h3>
+								<p>
+									A web app that leverages machine learning algorithms and
+									sentiment analysis to predict safe routes for women to travel.
+								</p>
+								<p>
+									<a
+										target="_blank"
+										href="https://www.github.com/iamdeepti/shecure/issues?q=is%3Aissue+label%3Ahacktoberfest"
+										>Contribute</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="custom-media d-flex">
+							<div class="img mr-4">
+								<img
+									src="images/icon-holder.png"
+									alt="Image"
+									class="img-fluid"
+								/>
+							</div>
+							<div class="text">
+								<span class="meta">MongoDB | NodeJS | React</span>
+								<h3 class="mb-4">
+									<a
+										href="https://github.com/HyperLoo/TaskManager-Server"
+										target="_blank"
+										>Task Scheduler</a
+									>
+								</h3>
+								<p>
+									A task scheduling and management web app to help organize your
+									daily chores and get you productive!
+								</p>
+								<p>
+									<a
+										target="_blank"
+										href="https://github.com/HyperLoo/TaskManager-Server/issues?q=is%3Aissue+label%3Ahacktoberfest"
+										>Contribute</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="custom-media d-flex">
+							<div class="img mr-4">
+								<img
+									src="images/shopper-icon.png"
+									alt="Image"
+									class="img-fluid"
+								/>
+							</div>
+							<div class="text">
+								<span class="meta">ReactJS | Firebase</span>
+								<h3 class="mb-4">
+									<a
+										href="https://github.com/elit-altum/React-Shoppping-Cart"
+										target="_blank"
+										>Shopper - Checkout System</a
+									>
+								</h3>
+								<p>
+									A reactive shopping cart checkout system which allows users to
+									add, remove or manipulate products in their cart.
+								</p>
+								<p>
+									<a
+										target="_blank"
+										href="https://github.com/elit-altum/React-Shoppping-Cart/issues?q=is%3Aissue+label%3Ahacktoberfest"
+										>Contribute</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="custom-media d-flex">
+							<div class="img mr-4">
+								<img
+									src="images/icon-holder.png"
+									alt="Image"
+									class="img-fluid"
+								/>
+							</div>
+							<div class="text">
+								<span class="meta">MongoDB | NodeJS | React</span>
+								<h3 class="mb-4">
+									<a
+										href="https://github.com/HyperLoo/UrlCompressor-Server/"
+										target="_blank"
+										>URL Minifier</a
+									>
+								</h3>
+								<p>A basic URL Minifier built using the MERN Stack.</p>
+								<p>
+									<a
+										target="_blank"
+										href="https://github.com/HyperLoo/UrlCompressor-Server/issues?q=is%3Aissue+label%3Ahacktoberfest"
+										>Contribute</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Android Projects Section -->
+			<div class="container site-section">
+				<div class="row">
+					<div class="col-6 title-section">
+						<h2 class="heading">Projects - Android</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="custom-media d-flex">
+							<div class="img mr-4">
+								<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+							</div>
+							<div class="text">
+								<span class="meta">NodeJS | Express | MongoDB</span>
+								<h3 class="mb-4">
+									<a
+										href="https://github.com/elit-altum/AuthExp-Express-Starter"
+										>AuthEXP - Web Authentication</a
+									>
+								</h3>
+								<p>
+									A simple, intuitive and ready to use MVC express starter with
+									built-in user authentication. Highly customizable for scaling.
+								</p>
+								<p>
+									<a
+										href="https://github.com/elit-altum/AuthExp-Express-Starter/issues?q=label%3Ahacktoberfest"
+										>Contribute</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="custom-media d-flex">
+							<div class="img mr-4">
+								<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+							</div>
+							<div class="text">
+								<span class="meta">ReactJS | Firebase</span>
+								<h3 class="mb-4">
+									<a href="https://github.com/elit-altum/React-Shoppping-Cart"
+										>Shopper - Checkout System</a
+									>
+								</h3>
+								<p>
+									A simple shopping cart trader system built using React Hooks
+									and Firebase.
+								</p>
+								<p>
+									<a
+										href="https://github.com/elit-altum/React-Shoppping-Cart/issues?q=is%3Aissue+label%3Ahacktoberfest"
+										>Contribute</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Machine Learning Projects Section -->
+			<div class="container site-section">
+				<div class="row">
+					<div class="col-6 title-section">
+						<h2 class="heading">Projects - ML</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="custom-media d-flex">
+							<div class="img mr-4">
+								<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+							</div>
+							<div class="text">
+								<span class="meta">NodeJS | Express | MongoDB</span>
+								<h3 class="mb-4">
+									<a
+										href="https://github.com/elit-altum/AuthExp-Express-Starter"
+										>AuthEXP - Web Authentication</a
+									>
+								</h3>
+								<p>
+									A simple, intuitive and ready to use MVC express starter with
+									built-in user authentication. Highly customizable for scaling.
+								</p>
+								<p>
+									<a
+										href="https://github.com/elit-altum/AuthExp-Express-Starter/issues?q=label%3Ahacktoberfest"
+										>Contribute</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="custom-media d-flex">
+							<div class="img mr-4">
+								<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+							</div>
+							<div class="text">
+								<span class="meta">ReactJS | Firebase</span>
+								<h3 class="mb-4">
+									<a href="https://github.com/elit-altum/React-Shoppping-Cart"
+										>Shopper - Checkout System</a
+									>
+								</h3>
+								<p>
+									A simple shopping cart trader system built using React Hooks
+									and Firebase.
+								</p>
+								<p>
+									<a
+										href="https://github.com/elit-altum/React-Shoppping-Cart/issues?q=is%3Aissue+label%3Ahacktoberfest"
+										>Contribute</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Internal linking for contact -->
+			<a id="contact"></a>
+
+			<footer class="footer-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="widget mb-6">
+								<h3>Contact Us</h3>
+								<p>
+									Delhi Technological University Bawana Road, Daulatpur Village,
+									Rohini, Delhi, 110042<br />
+								</p>
+
+								<ul class="list-unstyled links">
+									<li><a href="mailto:dsc.dtu@gmail.com">Mail</a></li>
+									<li><a href="https://github.com/dsc-dtu">Github</a></li>
+									<li>
+										<a href="https://www.linkedin.com/company/dsc-dtu"
+											>LinkedIn</a
+										>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/dsc_dtu/">Instagram</a>
+									</li>
+									<li>
+										<a href="https://www.facebook.com/googledscdtu/"
+											>Facebook</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row text-center">
+						<div class="col-md-12">
+							<div class="pt-5">
+								<p>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+									Copyright &copy;
+									<script>
+										document.write(new Date().getFullYear());
+									</script>
+									All rights reserved | This template is made with
+									<i class="icon-heart" aria-hidden="true"></i> by
+									<a href="https://colorlib.com" target="_blank">Colorlib</a>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- .site-wrap -->
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="js/bootstrap-datepicker.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+		<script src="js/main.js"></script>
+	</body>
 </html>

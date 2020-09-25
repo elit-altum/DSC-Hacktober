@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-} 
+}
 
 /* Base */
 body {
@@ -1414,6 +1414,14 @@ h5,
 
 .bg-dark {
   background: #1a1e25 !important;
+}
+
+.custom-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-top: 40px;
 }
 
 .custom-media .img {
